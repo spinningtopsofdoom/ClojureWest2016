@@ -1,0 +1,5 @@
+{ "name": "Clojure Hash Maps: plenty of room at the bottom",
+  "highlight": "solarized_dark",
+  "sections": [
+      {"section":"clojure_west/intro"}
+  ]}
