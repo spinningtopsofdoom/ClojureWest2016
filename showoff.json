@@ -3,5 +3,6 @@
   "sections": [
       {"section":"clojure_west/intro"},
       {"section":"clojure_west/overview"},
-      {"section":"clojure_west/iteration"}
+      {"section":"clojure_west/iteration"},
+      {"section":"clojure_west/equality"}
   ]}
