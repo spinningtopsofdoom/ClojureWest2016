@@ -37,15 +37,32 @@ New node is created with removal of `:foo` key and value from array
 
 !SLIDE
 
-(small example of map above)
+`[K, V, K, V, SN, SN]`
+
+&nbsp;
+
+`[SN, SN] [SN, SN]`
+
+&nbsp;
+
+`[K, V, K, V] [K, V, K, V] [K, V, K, V] [K, V, K, V]`
+
 
 !SLIDE
 
-(map that still has same structure as before)
+`[SN, SN]`
+
+&nbsp;
+
+`[SN, SN] [SN, SN]`
+
+&nbsp;
+
+`[] [] [] []`
 
 !SLIDE
 
-Current deletion does not remove sub node references or empty nodes
+## Current deletion does not remove sub node references or empty nodes
 
 !SLIDE
 
@@ -58,6 +75,8 @@ CHAMP algorithm
 
 `[1, 1, 2, 2]`
 
+&nbsp;
+
 `[1, 1, <sub node>]` -> `[<sub node>]`-> `[2, 2, 3, 3]`
 
 `[1, 1, <sub node>]` -> `[2, 2]`
@@ -66,7 +85,7 @@ CHAMP algorithm
 
 !SLIDE
 
-Lowers memory overhead that occurs from `dissoc`
+## Lowers memory overhead that occurs from `dissoc`
 
 !SLIDE bullets incremental transition=fade
 
@@ -81,7 +100,7 @@ Lowers memory overhead that occurs from `dissoc`
 
 !SLIDE
 
-We still get 10x performance boost for maps don't share any structure
+## We still get 10x performance boost for maps don't share any structure
 
 - Only Comparing two arrays
 - Current comparison has overhead due to Clojure abstractions (sequences and lookup)

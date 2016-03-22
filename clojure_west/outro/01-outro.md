@@ -1,13 +1,13 @@
 !SLIDE
 
-Future possibilities
+## Future possibilities
 
 - Merge and Diff operations could have greatly increased performance
 - Similar to RRB Vectors for Vectors
 
 !SLIDE
 
-CHAMP has shown Hash Maps have plenty of room at the bottom
+## CHAMP shows Hash Maps have plenty of room at the bottom
 
 - 2x perf for iteration
 - 10 - 100x perf for equality checking
@@ -15,11 +15,11 @@ CHAMP has shown Hash Maps have plenty of room at the bottom
 
 !SLIDE
 
-For me biggest win is making Hash Maps much easier to understand and implement
+## For me biggest win is making Hash Maps much easier to understand and implement
 
 !SLIDE
 
-Clojure Hash Maps have already been exported to many languages
+## Clojure Hash Maps have already been exported to many languages
 
 - Scala (base hash map)
 - Elixir (base hash map)
@@ -27,9 +27,9 @@ Clojure Hash Maps have already been exported to many languages
 - Ruby (hamster)
 - JavaScript (immutable.js)
 
-!SLIDE
+!SLIDE smbullets
 
-Thanks
+## Thanks
 
 * Bendyworks for letting me work on this
 * Michael J. Steindorfer and Jurgen J. Vinju for the Lean HAMT Paper
@@ -40,13 +40,19 @@ Thanks
 
 !SLIDE
 
-Special Thanks
+## Special Thanks
 
-Cliff Rodgers
+## Cliff Rodgers
 
-@2kliph
+## @2kliph
 
 !SLIDE
 
-Questions?
+# ClojureScript implementation
+
+## https://github.com/bendyworks/lean-map
+
+!SLIDE
+
+# Questions?
 

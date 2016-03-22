@@ -3,7 +3,7 @@
 # Clojure Hash Maps:
 ## plenty of room at the bottom
 
-## by Peter Schuck
+&nbsp;
 ## @spinningtopsofdoom
 
 !SLIDE
@@ -16,7 +16,7 @@
 
 !SLIDE
 
-How to radically improve Hash Map performance and memory usage
+## How to radically improve Hash Map performance and memory usage
 
 !SLIDE
 
@@ -25,22 +25,23 @@ How to radically improve Hash Map performance and memory usage
 
 !SLIDE
 
-##Compressed Hash-Array Mapped Prefix-tree
+## Compressed Hash-Array Mapped Prefix-tree
 
-##CHAMP
+&nbsp;
+## CHAMP
 
 !SLIDE
 
-CHAMP gives you guaranteed Hash Map performance gains
+## CHAMP gives you guaranteed Hash Map performance gains
 
 - Iteration by 2x
 - Equality checking by 10x to 100x
 
 !SLIDE
 
-CHAMP will trim the flab from your Hash Maps
+## CHAMP will trim the flab from your Hash Maps
 
-getting them from **(** to **{**
+## getting them from **(** to **{**
 
 !SLIDE
 

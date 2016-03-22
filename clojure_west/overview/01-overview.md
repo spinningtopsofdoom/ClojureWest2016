@@ -1,31 +1,29 @@
 !SLIDE
 
-#Overview of Clojure Hash Maps
+# Overview of Clojure Hash Maps
 
 !SLIDE
 
-#Clojure Hash Maps tree of nodes
-##32 way branching factor
+# Clojure Hash Maps tree of nodes
+## 32 way branching factor
 
 !SLIDE
 
-#Each node comtains
-## Array of Key Value pairs and references to lower level node (sub node references)
-##Metadata tells the location of a key in the array
+# Inside a node
 
-:foo is in slot 0 of array
-3 is in slot 2 of array
+`[:foo :bar, 3 5, nil <sub node refence>]`
 
-[:foo :bar, 3 5, nil <sub node refence>]
+## Metadata tells the location of a key in the array
 
 !SLIDE
 
-#Location of key in map is determined by hash
-## Hash is chunked into groups of 5 bits
+## Location of key in map is determined by hash
+### Hash is chunked into groups of 5 bits
 
-|00110|01100|11100|
+`:foo |6|23|15|7|30|2|`
 
-## first five bits determine location in level 1
-## next five bits determine location in level 2
+`[6]`
 
-## for collisions at one level go down check the next five bits at a lower level
+`[X] [23]`
+
+`[X] [15] [X] [X]`

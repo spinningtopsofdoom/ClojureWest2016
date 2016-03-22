@@ -11,7 +11,7 @@
 
 !SLIDE
 
-Turns in windows asking "Is it a Key Value pair or sub node?" for every operation
+Turns into windows asking "Is it a Key Value pair or sub node?" for every operation
 
 !SLIDE
 
@@ -38,13 +38,14 @@ Turns in windows asking "Is it a Key Value pair or sub node?" for every operatio
 
 !SLIDE
 
-##CHAMP fixes both warts by having Key Value pairs in the front of a node's array and the sub node references be in back
+## CHAMP fixes both warts by having Key Value pairs in the front of a node's array and the sub node references be in back
 
 `[:foo, :bar, 3, 3, 6, 6, <sub node 1>, <sub node 2>]`
 
 !SLIDE
 
-Decomplects metadata by splitting it into
+## Decomplects metadata by splitting it into
+
 - Key Value metadata
 - Sub node reference metadata
 
@@ -54,9 +55,9 @@ Decomplects metadata by splitting it into
 - No incidental complexity (`nil` flag, Array Node)
 - Iteration goes from a wiki walk to a linear scan
 
-!SLIDE
+!SLIDE smbullets
 
-Current Hash Map iteration algorithm
+## Current Hash Map iteration algorithm
 
 - If `nil` flag is true return `[nil, <nil value>]`
 - For normal nodes
@@ -68,7 +69,7 @@ Current Hash Map iteration algorithm
 
 !SLIDE
 
-CHAMP iteration algorithm
+## CHAMP iteration algorithm
 
 - Iterate though Key Value pairs
 - Iterate through sub node(s) repeating step one
