@@ -6,14 +6,14 @@
 !SLIDE small
 
     @@@ clojure
-    (def base-map (hash-map))
+    (def base-map (hash-map)) ;; {}
     (def same-map
          (as-> base-map m
           (reduce #(assoc %1 %2 0) m (range 1000000))
-          (reduce #(dissoc %1 %2) m (range 1000000))))
+          (reduce #(dissoc %1 %2) m (range 1000000)))) ;; {}
     (= base-map same-map) ;; true
-    (time (into {} base-map)) ;;140 microseconds
-    (time (into {} same-map)) ;;??? microseconds
+    (time (into {} base-map)) ;; 140 microseconds
+    (time (into {} same-map)) ;; ??? microseconds
 
 !SLIDE
 
@@ -29,59 +29,36 @@
 
 !SLIDE
 
-    @@@ clojure
-    (dissoc m :foo)
-
-New node is created with removal of `:foo` key and value from array
-`[3, 3, :foo, :bar, <sub node>]` -> `[3, 3, <sub node>]`
+# Current Delete Algorithm
 
 !SLIDE
 
-`[K, V, K, V, SN, SN]`
+![Node internals](../../images/naive-delete.svg)
 
-&nbsp;
+!SLIDE
 
-`[SN, SN] [SN, SN]`
+# This leads to
 
-&nbsp;
+!SLIDE
 
-`[K, V, K, V] [K, V, K, V] [K, V, K, V] [K, V, K, V]`
+![Node internals](../../images/example-base-delete.svg)
+
+!SLIDE
+
+![Node internals](../../images/example-sloppy-delete.svg)
 
 
 !SLIDE
 
-`[SN, SN]`
-
-&nbsp;
-
-`[SN, SN] [SN, SN]`
-
-&nbsp;
-
-`[] [] [] []`
+# CHAMP Delete Algorithm
 
 !SLIDE
 
-## Current deletion does not remove sub node references or empty nodes
+![Node internals](../../images/champ-delete-one.svg)
 
 !SLIDE
 
-CHAMP algorithm
-
-    @@@ clojure
-    (dissoc m 3)
-
-`[1, 1, <sub node>]` -> `[2, 2, 3, 3]`
-
-`[1, 1, 2, 2]`
-
-&nbsp;
-
-`[1, 1, <sub node>]` -> `[<sub node>]`-> `[2, 2, 3, 3]`
-
-`[1, 1, <sub node>]` -> `[2, 2]`
-
-`[1, 1, 2, 2]`
+![Node internals](../../images/champ-delete-two.svg)
 
 !SLIDE
 

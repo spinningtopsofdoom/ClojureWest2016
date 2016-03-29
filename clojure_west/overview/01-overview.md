@@ -9,21 +9,20 @@
 
 !SLIDE
 
-# Inside a node
-
-`[:foo :bar, 3 5, nil <sub node refence>]`
-
-## Metadata tells the location of a key in the array
+![Node internals](../../images/hash-map-overview.svg)
 
 !SLIDE
 
-## Location of key in map is determined by hash
-### Hash is chunked into groups of 5 bits
+# Node internals
 
-`:foo |6|23|15|7|30|2|`
+!SLIDE
 
-`[6]`
+![Node internals](../../images/nodes.svg)
 
-`[X] [23]`
+!SLIDE
 
-`[X] [15] [X] [X]`
+# How a key finds a node
+
+!SLIDE
+
+![Node internals](../../images/key-hash.svg)

@@ -5,13 +5,15 @@
 
 !SLIDE
 
-# Sub Node references use nil as a "key" marker value
-
-`[nil, <sub node reference>]`
+## Sub node reference is a psuedo Key Value pair with nil as the "key"
 
 !SLIDE
 
-Turns into windows asking "Is it a Key Value pair or sub node?" for every operation
+![Node internals](../../images/sub-node-nil-marker.svg)
+
+!SLIDE
+
+## Adds overhead for each sub node reference
 
 !SLIDE
 
@@ -21,9 +23,15 @@ Turns into windows asking "Is it a Key Value pair or sub node?" for every operat
 
 !SLIDE
 
-## Sub node references scattered throughout array
+## Sub node references are scattered throughout a nodes array
 
-`[:foo, :bar, nil <sub node 1>, 3, 3, 6, 6, nil, <sub node 2>]`
+!SLIDE
+
+![Node internals](../../images/sub-node-scattered.svg)
+
+!SLIDE
+
+Combined with nil marker value makes it so you have to ask "Is it a Key Value pair or sub node reference?" for every operation
 
 !SLIDE
 
@@ -38,16 +46,15 @@ Turns into windows asking "Is it a Key Value pair or sub node?" for every operat
 
 !SLIDE
 
-## CHAMP fixes both warts by having Key Value pairs in the front of a node's array and the sub node references be in back
-
-`[:foo, :bar, 3, 3, 6, 6, <sub node 1>, <sub node 2>]`
+## CHAMP node improvements
 
 !SLIDE
 
-## Decomplects metadata by splitting it into
+![Node internals](../../images/champ-array.svg)
 
-- Key Value metadata
-- Sub node reference metadata
+!SLIDE
+
+![Node internals](../../images/champ-array-2.svg)
 
 !SLIDE
 
