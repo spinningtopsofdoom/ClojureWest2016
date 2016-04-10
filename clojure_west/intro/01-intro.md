@@ -27,19 +27,18 @@
 ## Optimizing Hash-Array Mapped Tries for Fast and Lean Immutable JVM Collections
 ### by Michael J. Steindorfer and Jurgen J. Vinju
 
-
-!SLIDE
-
-# ClojureScript implementation
-
-## https://github.com/bendyworks/lean-map
-
 !SLIDE
 
 ## Compressed Hash-Array Mapped Prefix-tree
 
 &nbsp;
 ## CHAMP
+
+!SLIDE
+
+# ClojureScript implementation
+
+## https://github.com/bendyworks/lean-map
 
 !SLIDE
 
@@ -50,11 +49,11 @@
 
 !SLIDE
 
-## CHAMP will trim the your Hash Maps
+## CHAMP trims your Hash Maps
 
 !SLIDE
 
-## going from relaxed fit
+## going from relaxed fit punctuation
 # **(**
 
 
