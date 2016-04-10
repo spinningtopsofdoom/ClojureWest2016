@@ -116,4 +116,7 @@ Lower memory overhead by removing `nil` marker values
 
 !SLIDE
 
-# Two lines vs seven lines and no conditionals vs three
+# Comparison
+- Seven lines vs two lines
+- Three conditionals vs none
+- Polymorphism vs no polymorphism

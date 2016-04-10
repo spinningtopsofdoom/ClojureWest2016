@@ -83,5 +83,5 @@
 
 ## We still get 10x performance boost for maps don't share any structure
 
-- Only Comparing two arrays
 - Current comparison has overhead due to Clojure abstractions (sequences and lookup)
+- CHAMP comparison is only comparing two arrays
