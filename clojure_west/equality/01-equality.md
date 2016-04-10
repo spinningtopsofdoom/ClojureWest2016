@@ -1,5 +1,9 @@
 !SLIDE
 
+# CHAMP Equality Check improvements
+
+!SLIDE
+
 # Clojure Puzzler
 ## Sloppy Cleaning
 

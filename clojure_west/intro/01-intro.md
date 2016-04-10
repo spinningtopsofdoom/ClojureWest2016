@@ -8,20 +8,31 @@
 
 !SLIDE
 
-##Building an alien space ship
+## Building an alien space ship
 
-- Building a transporter without it running amok every other episode
+- Avoiding the gray goo scenario when making nano machines
 - What cup of tea is best to power your Infinite Improbability Drive (earl gray hot)
 - How to make the spaceship bigger on the inside then on the outside
 
 !SLIDE
 
-## How to radically improve Hash Map performance and memory usage
+## Talk about real alien technology
+
+!SLIDE
+
+![LISP Alien](../../images/lisp_alien_fancy.png)
 
 !SLIDE
 
 ## Optimizing Hash-Array Mapped Tries for Fast and Lean Immutable JVM Collections
 ### by Michael J. Steindorfer and Jurgen J. Vinju
+
+
+!SLIDE
+
+# ClojureScript implementation
+
+## https://github.com/bendyworks/lean-map
 
 !SLIDE
 
@@ -39,13 +50,24 @@
 
 !SLIDE
 
-## CHAMP will trim the flab from your Hash Maps
-
-## getting them from **(** to **{**
+## CHAMP will trim the your Hash Maps
 
 !SLIDE
 
-You don't need a wizard degree in black magic bit twiddling
+## going from relaxed fit
+# **(**
+
+
+!SLIDE
+
+## to their high school punctuation
+# **{**
+
+!SLIDE
+
+![Wizard School](../../images/John_William_Waterhouse_-_The_Crystal_Ball.JPG)
+
+!SLIDE
 
 CHAMP makes Hash Maps more wieldy, making them both simpler and easier
 

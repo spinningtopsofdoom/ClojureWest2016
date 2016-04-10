@@ -1,7 +1,7 @@
 !SLIDE
 
 # First major improvement
-##  Removes warts from Hash Map nodes
+## Removes problems with sub node references
 
 !SLIDE
 
@@ -13,13 +13,15 @@
 
 !SLIDE
 
-## Adds overhead for each sub node reference
+## Doubles overhead for each sub node reference
 
 !SLIDE
 
 ## Adds incidental complexity
 - Needs a flag for `nil` key and field for `nil` values
-- Calls for optimized node (Array Node) just containing sub node references
+- Optimized node (Array Node) just containing sub node references
+  - Happens when normal node's array has 32 elements
+- Further complications with second problem
 
 !SLIDE
 
@@ -39,10 +41,30 @@ Combined with nil marker value makes it so you have to ask "Is it a Key Value pa
 
 !SLIDE
 
-- The Roman Empire was the post-**Roman Republic** period
-- The Roman Republic was the period of **ancient Roman civilization** beginning with the
-- Lots more link clicking...
-- Awareness is the ability to perceive, to feel, or to be conscious of events, objects, thoughts, emotions, or sensory patterns
+## The Roman Empire was the post-**Roman Republic** period
+
+!SLIDE
+
+## The Roman Republic was the period of **ancient Roman civilization** beginning with the
+
+!SLIDE
+
+## Lots more link clicking...
+
+!SLIDE
+
+## Awareness is the ability to perceive, to feel, or to be conscious of events, objects, thoughts, emotions, or sensory patterns
+
+!SLIDE
+
+## What was the next word after **Roman Republic**?
+
+!SLIDE
+
+# Wiki Walk Iteration
+- Bad locality
+  - Blows the stack
+  - CPU caches are never hot
 
 !SLIDE
 
@@ -58,9 +80,20 @@ Combined with nil marker value makes it so you have to ask "Is it a Key Value pa
 
 !SLIDE
 
-- Removes extra space taken up by nil marker values
-- No incidental complexity (`nil` flag, Array Node)
-- Iteration goes from a wiki walk to a linear scan
+Lower memory overhead by removing `nil` marker values
+
+!SLIDE
+
+## Removes all sub node incidental complexity
+
+- `nil` key flag
+- nil value field
+- Array Node
+- Check for Key Value or Sub node reference
+
+!SLIDE
+
+## 2X performance by changing iteration from wiki walk to a linear scan
 
 !SLIDE smbullets
 

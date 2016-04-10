@@ -1,9 +1,22 @@
 !SLIDE
 
-## Future possibilities
+## CHAMP improvements paves the way for future improvements
+### CHAMP internals are much easier to work with and reason about
+
+!SLIDE
+
+## Two Future possibilities
 
 - Merge and Diff operations could have greatly increased performance
 - Similar to RRB Vectors for Vectors
+
+!SLIDE
+
+# Not as cool as working nanobots
+
+!SLIDE
+
+![LISP Alien](../../images/lisp_alien_fancy.png)
 
 !SLIDE
 
@@ -31,7 +44,7 @@
 
 ## Thanks
 
-* Bendyworks for letting me work on this
+* Bendyworks for supporting my work on this
 * Michael J. Steindorfer and Jurgen J. Vinju for the Lean HAMT Paper
 * Zach Tellman for writing Collection Check
 * Martin Klepsch for porting Collection Check to ClojureScript
@@ -48,9 +61,7 @@
 
 !SLIDE
 
-# ClojureScript implementation
-
-## https://github.com/bendyworks/lean-map
+# Fin
 
 !SLIDE
 
