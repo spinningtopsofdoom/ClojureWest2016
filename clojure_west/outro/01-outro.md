@@ -12,7 +12,7 @@
 
 !SLIDE
 
-# Not as cool as working nanobots
+# CHAMP is not as cool as working nanobots
 
 !SLIDE
 
@@ -32,7 +32,7 @@
 
 !SLIDE
 
-## Clojure Hash Maps have already been exported to many languages
+## Clojure Hash Maps is one of Clojure's best exports
 
 - Scala (base hash map)
 - Elixir (base hash map)
@@ -45,7 +45,7 @@
 ## Thanks
 
 * Bendyworks for supporting my work on this
-* Michael J. Steindorfer and Jurgen J. Vinju for the Lean HAMT Paper
+* Michael J. Steindorfer and Jurgen J. Vinju for the CHAMP Paper
 * Zach Tellman for writing Collection Check
 * Martin Klepsch for porting Collection Check to ClojureScript
 * Nicolás Berger for helping me setup test harness
