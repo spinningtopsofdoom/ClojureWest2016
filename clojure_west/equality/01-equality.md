@@ -13,7 +13,7 @@
     (def base-map (hash-map)) ;; {}
     (def same-map
          (as-> base-map m
-          (reduce #(assoc %1 %2 0) m (range 1000000))
+          (reduce #(assoc %1 %2 0) m (range 1000000))  ;; {0 0, 1 0, 2 0...}
           (reduce #(dissoc %1 %2) m (range 1000000)))) ;; {}
     (= base-map same-map) ;; true
     (time (into {} base-map)) ;; 140 microseconds
@@ -66,7 +66,7 @@
 
 !SLIDE
 
-## Lowers memory overhead that occurs from `dissoc`
+## Lowers memory overhead that occurs from deletion
 
 !SLIDE bullets incremental transition=fade
 

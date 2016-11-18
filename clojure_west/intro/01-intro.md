@@ -5,6 +5,7 @@
 
 &nbsp;
 ## @spinningtopsofdoom
+## @2kliph
 
 !SLIDE
 
@@ -21,6 +22,48 @@
 !SLIDE
 
 ![LISP Alien](../../images/lisp_alien_fancy.png)
+
+!SLIDE
+
+## Immutability as a cornerstone of functional programming
+
+!SLIDE
+
+## See it's used in
+
+- Scala
+- Elixir
+- Haskell
+- Ruby
+- JavaScript
+
+!SLIDE
+
+## Why immutable?
+
+- Deeply nested heterogenous data
+- Send data off to another part of the code: fire and forget :)
+- Fast delta diffing
+
+!SLIDE
+
+## There's always a catch
+- Orders of magnitude slower
+- Efficient implementations have constraints, like sortable keys,
+  storing deltas in the data structure itself
+  - Increasing cognitive overhead for developers
+
+- Similar to how TDD only works on small scales, no one wants a test
+  suite that takes 20 minutes to run
+
+!SLIDE
+
+## Hash Array Mapped Tries provide performance improvements
+
+- 2 to 3 times slower for common operations
+  - That's a lot better than orders of magnitude slower
+- No constraints
+- Reduced cognitive overhead
 
 !SLIDE
 

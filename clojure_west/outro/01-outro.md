@@ -1,5 +1,12 @@
 !SLIDE
 
+## Caveats
+- Currently slower compared to HAMT adding 8% and deletion 10 - 20% slower
+- This is JavaScript version (not JVM)
+- JVM version has comparable speeds to HAMT
+
+!SLIDE
+
 ## CHAMP improvements paves the way for future improvements
 ### CHAMP internals are much easier to work with and reason about
 
@@ -53,17 +60,8 @@
 
 !SLIDE
 
-## Special Thanks
-
-## Cliff Rodgers
-
-## @2kliph
-
-!SLIDE
-
 # Fin
 
 !SLIDE
 
 # Questions?
-
