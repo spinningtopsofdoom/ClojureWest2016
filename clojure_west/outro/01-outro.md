@@ -35,7 +35,7 @@
 
 !SLIDE
 
-## For me biggest win is making Hash Maps much easier to understand and implement
+## For Peter biggest win is making Hash Maps much easier to understand and implement
 
 !SLIDE
 
@@ -51,11 +51,11 @@
 
 ## Thanks
 
-* Bendyworks for supporting my work on this
+* Bendyworks for supporting our work on this
 * Michael J. Steindorfer and Jurgen J. Vinju for the CHAMP Paper
 * Zach Tellman for writing Collection Check
 * Martin Klepsch for porting Collection Check to ClojureScript
-* Nicolás Berger for helping me setup test harness
+* Nicolás Berger for helping Peter setup test harness
 * David Nolen for perf and profiling suggestions
 
 !SLIDE

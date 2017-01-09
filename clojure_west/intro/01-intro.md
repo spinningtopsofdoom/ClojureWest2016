@@ -13,7 +13,7 @@
 
 - Avoiding the gray goo scenario when making nano machines
 - What cup of tea is best to power your Infinite Improbability Drive (earl gray hot)
-- How to make the spaceship bigger on the inside then on the outside
+- How to make the spaceship bigger on the inside than on the outside
 
 !SLIDE
 
@@ -25,7 +25,7 @@
 
 !SLIDE
 
-## Immutability as a cornerstone of functional programming
+## Immutability: a cornerstone of functional programming
 
 !SLIDE
 
@@ -41,7 +41,7 @@
 
 ## Why immutable?
 
-- Deeply nested heterogenous data
+- Deeply nested heterogeneous data
 - Send data off to another part of the code: fire and forget :)
 - Fast delta diffing
 
@@ -52,9 +52,6 @@
 - Efficient implementations have constraints, like sortable keys,
   storing deltas in the data structure itself
   - Increasing cognitive overhead for developers
-
-- Similar to how TDD only works on small scales, no one wants a test
-  suite that takes 20 minutes to run
 
 !SLIDE
 
@@ -93,17 +90,6 @@
 !SLIDE
 
 ## CHAMP trims your Hash Maps
-
-!SLIDE
-
-## going from relaxed fit punctuation
-# **(**
-
-
-!SLIDE
-
-## to their high school punctuation
-# **{**
 
 !SLIDE
 

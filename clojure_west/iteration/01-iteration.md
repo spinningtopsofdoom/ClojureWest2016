@@ -97,7 +97,7 @@ Lower memory overhead by removing `nil` marker values
 
 !SLIDE smbullets
 
-## Current Hash Map iteration algorithm
+## Current Hash Map iteration algorithm (pseudocode)
 
 - If `nil` flag is true return `[nil, <nil value>]`
 - For normal nodes
