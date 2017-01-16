@@ -34,8 +34,7 @@
 - Scala
 - Elixir
 - Haskell
-- Ruby
-- JavaScript
+- Clojure
 
 !SLIDE
 
@@ -44,6 +43,7 @@
 - Deeply nested heterogeneous data
 - Send data off to another part of the code: fire and forget :)
 - Fast delta diffing
+  - E.g. React shouldComponentUpdate
 
 !SLIDE
 

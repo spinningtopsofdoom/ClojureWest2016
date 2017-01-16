@@ -11,10 +11,8 @@
 
     @@@ clojure
     (def base-map (hash-map)) ;; {}
-    (def same-map
-         (as-> base-map m
-          (reduce #(assoc %1 %2 0) m (range 1000000))  ;; {0 0, 1 0, 2 0...}
-          (reduce #(dissoc %1 %2) m (range 1000000)))) ;; {}
+    (def full-map (reduce (fn [m i] (assoc m i 0)) base-map (range 1000000)))
+    (def same-map (reduce dissoc full-map (range 1000000))) ;; {}
     (= base-map same-map) ;; true
     (time (into {} base-map)) ;; 140 microseconds
     (time (into {} same-map)) ;; ??? microseconds
