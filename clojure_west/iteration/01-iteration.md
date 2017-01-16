@@ -33,7 +33,7 @@
 
 !SLIDE
 
-Combined with nil marker value makes it so you have to ask "Is it a Key Value pair or sub node reference?" for every operation
+Combined with `nil` marker value makes it so you have to ask "Is it a Key Value pair or sub node reference?" for every operation
 
 !SLIDE
 
@@ -87,7 +87,7 @@ Lower memory overhead by removing `nil` marker values
 ## Removes all sub node incidental complexity
 
 - `nil` key flag
-- nil value field
+- `nil` value field
 - Array Node
 - Check for Key Value or Sub node reference
 
