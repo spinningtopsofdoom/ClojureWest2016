@@ -91,7 +91,7 @@
 
 ## CHAMP trims your Hash Maps
 
-!SLIDE
+!SLIDE background-fit
 
 ![Wizard School](../../images/John_William_Waterhouse_-_The_Crystal_Ball.JPG)
 
