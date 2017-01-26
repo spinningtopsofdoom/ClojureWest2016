@@ -10,10 +10,22 @@
 !SLIDE small
 
     @@@ clojure
-    (def base-map (hash-map)) ;; {}
-    (def full-map (reduce (fn [m i] (assoc m i 0)) base-map (range 1000000)))
-    (def same-map (reduce dissoc full-map (range 1000000))) ;; {}
-    (= base-map same-map) ;; true
+    (def base-map (hash-map))
+    (def one-million 1000000)
+
+    (def full-map
+      (reduce
+       (fn [m i] (assoc m i 0))
+       base-map
+       (range one-million)))
+
+    (def same-map
+      (reduce
+       (fn [m i] (dissoc m i))
+       full-map
+       (range one-million)))
+
+    (= base-map same-map)     ;; true
     (time (into {} base-map)) ;; 140 microseconds
     (time (into {} same-map)) ;; ??? microseconds
 
