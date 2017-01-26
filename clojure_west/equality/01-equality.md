@@ -79,6 +79,10 @@
 
 !SLIDE
 
+![Shared Structure](../../images/shared-structure.svg)
+
+!SLIDE
+
 ## We still get 10x performance boost for maps don't share any structure
 
 - Current comparison has overhead due to Clojure abstractions (sequences and lookup)
