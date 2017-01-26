@@ -78,7 +78,7 @@
 
 ## Lowers memory overhead that occurs from deletion
 
-!SLIDE bullets incremental transition=fade
+!SLIDE bullets
 
 - So what? This only really matters in pathological cases
 - Equal CHAMP maps have the exact same layout in memory
