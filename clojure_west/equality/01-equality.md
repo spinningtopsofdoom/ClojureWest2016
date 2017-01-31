@@ -7,7 +7,7 @@
 # Clojure Puzzler
 ## Sloppy Cleaning
 
-!SLIDE small
+!SLIDE
 
     @@@ clojure
     (def base-map (hash-map))
