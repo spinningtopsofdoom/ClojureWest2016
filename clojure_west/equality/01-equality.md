@@ -43,7 +43,7 @@
 
 !SLIDE
 
-# Current Delete Algorithm
+# Original Delete Algorithm
 
 !SLIDE
 
@@ -98,5 +98,5 @@
 
 ## We still get 10x performance boost for maps that don't share any structure
 
-- Current comparison has overhead due to Clojure abstractions (sequences and lookup)
+- Original comparison has overhead due to Clojure abstractions (sequences and lookup)
 - CHAMP comparison is only comparing two arrays
