@@ -26,7 +26,7 @@
 - Christopher Grand is investigating using CHAMP as a basis for confluent hash maps
     - Uses node metadata to mark transient / persistent nodes
     - Removes marker objects needed for addition and deletion
-    - Makes CHAMP "confluent"
+    - Makes CHAMP able to merge hash maps in O(log n) time
 
 
 !SLIDE
