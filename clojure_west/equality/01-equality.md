@@ -83,11 +83,12 @@
 - So what? This only really matters in pathological cases
 - Equal CHAMP maps have the exact same layout in memory
 - We don't have to compare all Key Values we can compare nodes
+  (pointer equality)
 
 !SLIDE
 
 ## Equality check is now O(log n) vs O(n) leading to 100x performance improvement
-### This is when maps share structure
+### Assuming maps share structure
 
 !SLIDE
 
@@ -95,7 +96,7 @@
 
 !SLIDE
 
-## We still get 10x performance boost for maps don't share any structure
+## We still get 10x performance boost for maps that don't share any structure
 
 - Current comparison has overhead due to Clojure abstractions (sequences and lookup)
 - CHAMP comparison is only comparing two arrays

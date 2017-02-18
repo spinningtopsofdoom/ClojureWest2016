@@ -1,9 +1,11 @@
 !SLIDE
 
 ## Caveats
-- Currently slower compared to HAMT adding 8% and deletion 10 - 20% slower
-- This is JavaScript version (not JVM)
-- JVM version has comparable speeds to HAMT
+- Javascript version: addition: 8% slower; deletion 10 - 20% slower
+    - Compared to current clojurescript version
+- JVM version: comparable speed to HAMT
+  - Used in [Rascal](http://www.rascal-mpl.org/) (Steindorfer & Vinju)
+  - Christopher Grand has [ported CHAMP to Java using Clojure's hashing functions](https://gist.github.com/cgrand/ecab0e13d1e7ff64a2d2)
 
 !SLIDE
 
@@ -19,6 +21,16 @@
 
 !SLIDE
 
+## Interesting work on merging
+
+- Christopher Grand is investigating using CHAMP as a basis for confluent hash maps
+    - Uses node metadata to mark transient / persistent nodes
+    - Removes marker objects needed for addition and deletion
+    - Makes CHAMP "confluent"
+
+
+!SLIDE
+
 # CHAMP is not as cool as working nanobots
 
 !SLIDE
@@ -27,15 +39,15 @@
 
 !SLIDE
 
-## CHAMP shows Hash Maps have plenty of room at the bottom
+## CHAMP shows Hash Maps have plenty of room at the bottom compared to original ClojureScript HAMT implementation
 
-- 2x perf for iteration
-- 10 - 100x perf for equality checking
+- 2x speed up for iteration
+- 10 - 100x speed up for equality checking
 - Lower memory overhead
 
 !SLIDE
 
-## For Peter biggest win is making Hash Maps much easier to understand and implement
+## For Peter the biggest win is making Hash Maps much easier to understand and implement
 
 !SLIDE
 

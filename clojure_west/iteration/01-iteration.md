@@ -5,7 +5,7 @@
 
 !SLIDE
 
-## Sub node reference is a psuedo Key Value pair with nil as the "key"
+## Sub node reference is a pseudo Key Value pair with nil as the "key"
 
 !SLIDE
 
@@ -93,11 +93,11 @@ Lower memory overhead by removing `nil` marker values
 
 !SLIDE
 
-## 2X performance by changing iteration from wiki walk to a linear scan
+## 2X speed up by changing iteration from wiki walk to a linear scan
 
 !SLIDE smbullets
 
-## Current Hash Map iteration algorithm (pseudocode)
+## Original Hash Map iteration algorithm (pseudocode)
 
 - If `nil` flag is true return `[nil, <nil value>]`
 - For normal nodes
@@ -111,8 +111,8 @@ Lower memory overhead by removing `nil` marker values
 
 ## CHAMP iteration algorithm
 
-- Iterate though Key Value pairs
-- Iterate through sub node(s) repeating step one
+1) Iterate though Key Value pairs
+1) Iterate through sub node(s) repeating step one
 
 !SLIDE
 

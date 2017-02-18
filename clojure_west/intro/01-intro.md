@@ -60,7 +60,7 @@
 ## Hash Array Mapped Tries provide performance improvements
 
 - 2 to 3 times slower for common operations
-  - That's a lot better than orders of magnitude slower
+  - That's a lot better than an order of magnitude slower
 - No constraints
 - Reduced cognitive overhead
 
