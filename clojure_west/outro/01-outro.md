@@ -2,7 +2,7 @@
 
 ## Caveats
 - Javascript version: addition: 8% slower; deletion: 10 - 20% slower
-    - Compared to current clojurescript version
+    - Compared to current ClojureScript version
 - JVM version: comparable speed to HAMT
   - Used in [Rascal](http://www.rascal-mpl.org/) (Steindorfer & Vinju)
   - Christopher Grand has [ported CHAMP to Java using Clojure's hashing functions](https://gist.github.com/cgrand/ecab0e13d1e7ff64a2d2)
