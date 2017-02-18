@@ -111,8 +111,8 @@ Lower memory overhead by removing `nil` marker values
 
 ## CHAMP iteration algorithm
 
-1) Iterate though Key Value pairs
-1) Iterate through sub node(s) repeating step one
+1. Iterate though Key Value pairs
+1. Iterate through sub node(s) repeating step one
 
 !SLIDE
 
