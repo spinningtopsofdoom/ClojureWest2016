@@ -1,7 +1,7 @@
 !SLIDE
 
 ## Caveats
-- Javascript version: addition: 8% slower; deletion 10 - 20% slower
+- Javascript version: addition: 8% slower; deletion: 10 - 20% slower
     - Compared to current clojurescript version
 - JVM version: comparable speed to HAMT
   - Used in [Rascal](http://www.rascal-mpl.org/) (Steindorfer & Vinju)
