@@ -62,6 +62,7 @@
 - 2 to 3 times slower for common operations
   - That's a lot better than an order of magnitude slower
 - No constraints
+    - Only need a hashable key
 - Reduced cognitive overhead
 
 !SLIDE
